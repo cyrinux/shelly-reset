@@ -25,8 +25,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args = Args::parse();
 
     println!(
-        "Press 10 seconds pair button on the device, then pair the device with `bluetoothctl scan`, then pair, enter 0000 as pin, \
-        then as passkey enter the encryption code shown on the Android app."
+        "Press and hold the pair button on the device for 10 seconds, then use `bluetoothctl scan` to find the device. Pair it by entering '0000' as the PIN, followed by the passkey displayed in the Android app."
     );
 
     // Extract MAC address and UUID
